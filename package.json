@@ -5,8 +5,9 @@
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "clean": "rm -r ./build/*",
+        "clean": "rm -r ./build && mkdir ./build",
         "start": "npm run elm-live",
+        "start-built": "open build/index.html",
         "build": "npm run clean && npm run elm-build  && npm run copy-index",
         "elm-live": "elm-live src/Main.elm -- --output=elm.js --debug",
         "elm-build": "elm make --output=build/elm.js --optimize src/Main.elm",
