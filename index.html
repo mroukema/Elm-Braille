@@ -1,0 +1,18 @@
+<!doctype html>
+<html class="mdc-typography">
+  <head>
+    <script src="elm.js"></script>
+
+  </head>
+  <body>
+    <div id="elm-braille"></div>
+    <script>
+      (function () {
+          const app = Elm.Main.init({
+            node: document.getElementById('elm-braille'),
+            flags: []
+          });
+      })();
+    </script>
+  </body>
+</html>
